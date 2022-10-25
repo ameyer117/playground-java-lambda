@@ -25,7 +25,7 @@ $ sam deploy --s3-bucket $CF_BUCKET --stack-name HelloWorldLambdaJava --capabili
 To test:
 
 The above will create a new function in Lambda, so you can test via the Lambda web console,
-or via the CLI using `aws lambda invoke`.
+or via the CLI using `aws lambda invoke --invocation-type RequestResponse --function-name HelloWorldJava --payload '101' --cli-binary-format raw-in-base64-out outputfile.txt`.
 
 ## More Information
 
